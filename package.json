@@ -1,0 +1,23 @@
+{
+  "name": "alim-e-commerce",
+  "version": "1.0.0",
+  "description": "Site E-commerce pour les produit alimentaire",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idealy-ma/Alim-E-Commerce.git"
+  },
+  "author": "idealy-ma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idealy-ma/Alim-E-Commerce/issues"
+  },
+  "homepage": "https://github.com/idealy-ma/Alim-E-Commerce#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

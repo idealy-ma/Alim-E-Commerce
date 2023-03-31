@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginServiceService } from '../login-service.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,21 @@ import { Component } from '@angular/core';
 })
 
 export class LoginComponent {
-	message: String = "Hello";
+	email : string = "";
+	password : string = "";
 
-	changeMessage() {
-		this.message = "Goodbye, world!";
+	constructor(private loginService: LoginServiceService){}
+
+	log() {
+		let variable = {
+			email: this.email,
+			password: this.password
+		};
+		this.loginService.doSomething(variable).then((resultObservable)=>{
+			// console.log(e.json());
+			return resultObservable;
+		}).then((result)=>{
+			console.log(result);
+		});
 	}
 }
